@@ -13,7 +13,7 @@ class Index extends Template
 {
     public function getIframeUrl(): string
     {
-        return 'https://localhost:9080/';
+        return 'https://283976-272yellowcattle-stage.adobeio-static.net/';
     }
 
     public function getIframeWidth(): string
