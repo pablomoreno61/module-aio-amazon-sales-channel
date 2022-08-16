@@ -6,8 +6,10 @@
 declare(strict_types=1);
 
 /** @var \Magento\AioSalesChannel\Block\Adminhtml\Index $block */ ?>
-
+<?php if ($block->getIframeUrl()) : ?>
 <iframe width="<?= $block->getIframeWidth() ?>"
         height=<?= $block->getIframeHeight() ?>"
         src="<?= $block->getIframeUrl() ?>"
->
+<?php else: ?>
+No URL provided
+<?php endif; ?>

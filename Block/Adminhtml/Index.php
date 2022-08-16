@@ -11,16 +11,27 @@ use Magento\Framework\View\Element\Template;
 
 class Index extends Template
 {
-    public function getIframeUrl(): string
+    private const CONFIG_PATH = 'adobe_io_events/integration/amazon_sales_channel_url';
+
+    /**
+     * @return string
+     */
+    public function getIframeUrl(): ?string
     {
-        return 'https://283976-272yellowcattle-stage.adobeio-static.net/';
+        return $this->_scopeConfig->getValue(self::CONFIG_PATH);
     }
 
+    /**
+     * @return string
+     */
     public function getIframeWidth(): string
     {
         return '100%';
     }
 
+    /**
+     * @return string
+     */
     public function getIframeHeight(): string
     {
         return '1000px';
