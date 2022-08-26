@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Magento\AioSalesChannel\Block\Adminhtml;
+namespace Magento\AioAmazonSalesChannel\Block\Adminhtml;
 
 use Magento\Framework\View\Element\Template;
 

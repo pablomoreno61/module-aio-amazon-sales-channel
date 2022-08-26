@@ -7,8 +7,8 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
-        <route id="aio-channel" frontName="aio-channel">
-            <module name="Magento_AioSalesChannel" before="Magento_Adminhtml" />
+        <route id="aio_channel" frontName="aio-channel">
+            <module name="Magento_AioAmazonSalesChannel" before="Magento_Adminhtml" />
         </route>
     </router>
 </config>

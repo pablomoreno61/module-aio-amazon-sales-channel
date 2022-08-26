@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Magento\AioSalesChannel\Controller\Adminhtml\Amazon;
+namespace Magento\AioAmazonSalesChannel\Controller\Adminhtml\Amazon;
 
 use Magento\Framework\View\Result\Page;
 use Magento\Framework\View\Result\PageFactory;
@@ -40,8 +40,9 @@ class Index implements ActionInterface
     public function execute(): Page
     {
         $page = $this->resultPageFactory->create();
-        $page->setActiveMenu('Magento_AioSalesChannel::channel_amazon_index');
+        $page->setActiveMenu('AioAmazonSalesChannel::aio_channel_amazon_index');
         $page->getConfig()->getTitle()->prepend(__('Adobe I/O Amazon Sales Channel'));
+
         return $page;
     }
 }
