@@ -9,6 +9,7 @@ declare(strict_types=1);
 <?php if ($block->getIframeUrl()) : ?>
 <iframe width="<?= $block->getIframeWidth() ?>"
         height=<?= $block->getIframeHeight() ?>"
+        frameBorder="0"
         src="<?= $block->getIframeUrl() ?>"
 <?php else: ?>
 No URL provided
