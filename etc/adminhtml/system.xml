@@ -1,10 +1,16 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <section id="adobe_io_events">
-            <group id="integration">
-                <field id="amazon_sales_channel_url" translate="label" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
-                    <label>Adobe I/O Amazon Sales Channel URL</label>
+        <tab id="adobe_services" translate="label" sortOrder="130">
+            <label>Adobe Services</label>
+        </tab>
+        <section id="amazon_sales_channel">
+            <label>Amazon Sales Channel</label>
+            <tab>adobe_services</tab>
+            <group id="integration" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General configuration</label>
+                <field id="url" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Public URL</label>
                 </field>
             </group>
         </section>
