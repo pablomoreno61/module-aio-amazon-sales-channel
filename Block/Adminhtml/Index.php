@@ -11,7 +11,7 @@ use Magento\Framework\View\Element\Template;
 
 class Index extends Template
 {
-    private const CONFIG_PATH = 'adobe_io_events/integration/amazon_sales_channel_url';
+    private const CONFIG_PATH = 'amazon_sales_channel/integration/url';
 
     /**
      * @return string

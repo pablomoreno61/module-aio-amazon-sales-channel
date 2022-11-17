@@ -6,7 +6,8 @@
         "sort-packages": true
     },
     "require": {
-        "php": "~7.4.0||~8.1.0"
+        "php": "~7.4.0||~8.1.0",
+        "magento/module-adobe-io-events": "*"
     },
     "type": "magento2-module",
     "license": [

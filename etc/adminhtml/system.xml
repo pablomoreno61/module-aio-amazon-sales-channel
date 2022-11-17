@@ -1,12 +1,10 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="adobe_services" translate="label" sortOrder="130">
-            <label>Adobe Services</label>
-        </tab>
-        <section id="amazon_sales_channel">
+        <section id="amazon_sales_channel" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="140">
             <label>Amazon Sales Channel</label>
             <tab>adobe_services</tab>
+            <resource>Magento_AdobeIoEvents::config</resource>
             <group id="integration" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General configuration</label>
                 <field id="url" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
