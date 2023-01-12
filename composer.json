@@ -7,7 +7,7 @@
     },
     "require": {
         "php": "~7.4.0||~8.1.0",
-        "magento/module-adobe-io-events": "*"
+        "magento/module-adobe-io-events-client": "*"
     },
     "type": "magento2-module",
     "license": [
